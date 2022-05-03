@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Playfair+Display:ital,wght@1,500&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-image: radial-gradient(circle at 120.71% 50%, #fff989 0, #fbe47f 16.67%, #eccc76 33.33%, #d8b46c 50%, #c39d63 66.67%, #af895b 83.33%, #9c7754 100%);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-imagem {
+    height: 72px;
+    border-radius:70px
+}
+  
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+    font-size: 19px
+}
+
+
+:root {
+    --cor-fundo: #FFDEAD;
+    --cor-hover: rgb(118, 180, 145);
+    --cor-primaria: #8B2500;
+}
+
+.cabecalho-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cabecalho-menu ul {
+    background-color: var(--cor-fundo);
+}
+
+.cabecalho-menu li {
+    display: inline;
+    position: relative;
+}
+
+.cabecalho-menu ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s;
+}
+
+.cabecalho-menu ul li a:hover {
+    background-color: var(--cor-hover);
+}
+
+/*sub menu*/
+.cabecalho-menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.cabecalho-menu ul li:hover ul {
+    display: block;
+}
+
+.cabecalho-menu ul ul {
+    width: 150px
+}
+
+.cabecalho-menu ul ul li a {
+    display: block;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+.conteudo-principal-escrito-titulo {
+    text-align: center;
+    font-weight: 400;
+    margin-top: 30px;
+  }
+
+.galeria {
+    display: flex;
+}
+
+.pets-items {
+   margin-top: 30px;
+    width: 340px;
+    height: 340px;
+    border: 10px solid #FFF;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform .5s linear;
+}
+
+.pets-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pets-items:hover{
+    transform: scale(1.3);
+}
+
+.conteudo-principal-escrito-botao {
+    background-color: #ECD6C4;
+    margin-block-start: 70px;
+    margin-inline: 150px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2F2325;
+    border: 0;
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+.rodape-imagem {
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+}
